@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static "styles/home-styles.css" %}">
+<div class='secretText'>Secret</div>
+<div class='santaText'>Santa</div>
+<img class='hat' src="{% static 'images/santa-hat.png'%}"/>
+<form action='' method='POST'>
+    <input type="text" name = "personCode" placeholder='Code'>
+    <input type='submit' value='Draw Name'/>
+</form>
+
+{% endblock %}

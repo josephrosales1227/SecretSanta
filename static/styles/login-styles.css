@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url('/static/styles/IrishGrover-Regular.ttf');
+}
+
+.formFlexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.usernameLabel {
+    font-family: Irish Grover;
+    font-size: 26px;
+    flex: 1;
+}
+
+.passwordLabel {
+    font-family: Irish Grover;
+    font-size: 26px;
+    flex: 1;
+}
+.loginText {
+    font-family: Irish Grover;
+    font-size: 26px;
+}
+
+.createAccountText {
+    font-family: Irish Grover;
+    text-align: center;
+    font-size: 18px;
+}

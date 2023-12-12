@@ -1,0 +1,25 @@
+{% extends 'main.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "/styles/new-group-styles.css" %}">
+{% if request.user.is_authenticated %}
+<a href='/'>Back</a>
+<div>
+    <form method='POST' action=''>
+        {% csrf_token %}
+        <label>Group Name:</label>
+        <input type='text' name='groupName' placeholder='Enter Group Name' />
+
+        <label>Number Of Participants:</label>
+        <input type="number" name="numParticipants" min="4" max="100" />
+
+        <label>Budget:</label>
+        <input type="number" name="budget" min="1"/>
+
+        <input type='submit' value='Next'/>
+    </form>
+</div>
+{% endif %}
+
+{% endblock %}

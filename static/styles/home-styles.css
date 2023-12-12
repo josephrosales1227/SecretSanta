@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url('/static/styles/IrishGrover-Regular.ttf');
+}
+
+
+.secretText {
+    color: black;
+    font-family: Irish Grover;
+    font-size: 65px;
+    text-align: center;
+    -webkit-transform: rotate(-4.9deg);
+    word-wrap: break-word;
+    margin-top: 30px;
+}
+.santaText {
+    color: #DF5A5F;
+    font-family: Irish Grover;
+    font-size: 84px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.hat {
+    width: 54px;
+    height: 51px;
+    left: 276px;
+    top: 72px;
+    position: absolute;
+}

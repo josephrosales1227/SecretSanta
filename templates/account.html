@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}     
+{% if request.user.is_authenticated %}
+<link rel="stylesheet" href="{% static "/styles/account-styles.css" %}">
+<div class='container'>
+    <a href="{% url 'logout' %}" class='logoutText'>Logout</a>
+    <div class='nameText'>Name</div>
+    <div class='groupsContainer'>
+        {% for g in groups %}
+        <div class='itemContainer'>
+            <div class='groupName'>{{g.name}}</div>
+            <a class='viewText' href='/view-group/{{g.code}}'>View</a>
+            <a class='removeText' href='/delete-group/{{g.code}}'>Remove</a>
+        </div>
+        {% endfor %}
+    </div>
+    <button class='newGroupButton'><a href="{% url 'newGroup' %}" class='createText'>New Group</a></button>
+</div>
+{% endif %}
+
+{% endblock %}
