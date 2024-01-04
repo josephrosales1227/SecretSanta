@@ -7,10 +7,14 @@ table {
     margin-top: 30px;
     margin-left:auto;
     margin-right:auto;
-    width: 100%;
+    width: 90%;
+    table-layout: fixed;
 }
 td {
+    width: 33%;
     text-align: center;
+    font-family: Irish Grover;
+    font-size: 30px;
 }
 
 a {
@@ -20,31 +24,25 @@ a {
 .logoutText {
     color: #929292;
     font-size: 32px;
-    font-family: Irish Grover;
 }
 
 .groupName {
+    text-align: left;
     color: #DF5A5F;
-    font-size: 40px;
-    font-family: Irish Grover;
 }
 
 .viewText {
     color: #AFB97D;
-    font-size: 36px;
-    font-family: Irish Grover;
 }
 
 .removeText {
     color: black;
-    font-size: 36px;
-    font-family: Irish Grover;
 }
 
 .nameText {
     color: #929292;
     font-size: 32px;
-    font-family: Irish Grover;
+    text-align: left;
 }
 
 .newGroupButton {
