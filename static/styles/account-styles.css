@@ -3,6 +3,16 @@
     src: url('/static/styles/IrishGrover-Regular.ttf');
 }
 
+table {
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+}
+td {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -11,94 +21,47 @@ a {
     color: #929292;
     font-size: 32px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin:auto;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 12fr 1fr;
-    margin-top: 40px;
-  }
-
-.groupsContainer {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-.itemContainer {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-start: 1;
-    grid-column-end: 4;
 }
 
 .groupName {
     color: #DF5A5F;
     font-size: 40px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-    order: 1;
-    margin: auto;
 }
 
 .viewText {
     color: #AFB97D;
     font-size: 36px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-    order: 2;
-    margin: auto;
 }
 
 .removeText {
     color: black;
     font-size: 36px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-    order: 3;
-    margin: auto;
 }
 
 .nameText {
     color: #929292;
     font-size: 32px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin:auto
 }
-.createText {
+
+.newGroupButton {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     font-size: 26px;
     font-family: Irish Grover;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-.newGroupButton {
     background: #DF5A5F;
     border-radius: 9px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-left: 90px;
-    margin-right: 90px;
-    width: 150px
+    border-color: transparent;
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
