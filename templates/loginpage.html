@@ -4,24 +4,18 @@
 {% block content %}
 <link rel="stylesheet" href="{% static "styles/login-styles.css" %}">
 <div>
+    <img src='/static/images/logo.PNG'>
     <form method='POST' action=''>
         {% csrf_token %}
+
         <div class='formFlexbox'>
-            <label class='usernameLabel'>Username:</label>
-            <div class='usernameField'>
-                <input type='text' name='username' placeholder='Enter Username'/>
-            </div>
-            <label class='passwordLabel'>Password:</label>
-            <div class='passwordField'>
-                <input type='password' name='password' placeholder='Enter Password' />
-            </div>
-            <div class='logoutButton'>
-                <input class='loginText' type='submit' value='Login'/>
-            </div>
+            <input type='text' name='username' placeholder='Enter Username'/>
+            <input type='password' name='password' placeholder='Enter Password' />
+            <input class='loginButton' type='submit' value='Login'/>
         </div>
     </form>
-    <div class='createAccountText'>
-        <a href="{% url 'createAccount' %}">Don't have an account? Create one</a>
+    <div class='createAccountDiv'>
+        <a class='createAccountText' href="{% url 'createAccount' %}">Don't have an account? Create one</a>
     </div>
 </div>
 
