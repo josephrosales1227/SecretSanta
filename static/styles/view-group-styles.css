@@ -1,0 +1,63 @@
+a {
+    display: block;
+    font-family: Irish Grover;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #929292;
+    font-size: 30px;
+}
+
+div {
+    font-family: Irish Grover;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
+    table-layout: fixed;
+}
+
+td {
+    width: 50%;
+    text-align: center;
+    padding-right: 20px;
+}
+.groupName {
+    font-size: 30px;
+    text-align: center;
+    color: #DF5A5F;
+}
+
+.budget {
+    font-size: 20px;
+    text-align: center;
+    color: #AFB97D;
+}
+
+.giver {
+
+}
+
+.giverTable {
+    text-align: right;
+}
+.shareTable {
+    text-align: left;
+}
+.share {
+    color: #7996FF;
+}
+
+.instructionsTitle {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.instructionsText {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+}

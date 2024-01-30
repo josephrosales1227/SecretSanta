@@ -5,13 +5,18 @@
 <link rel="stylesheet" href="{% static "styles/add-participants-styles.css" %}">
 {% if request.user.is_authenticated %}
 <div>
+    <div class='titleText'>Add Participants</div>
     <form method='POST' action=''>
         {% csrf_token %}
-        {% for num in list %}
-        <label>Participant {{num}}:</label>
-        <input type='text' name='person{{num}}' placeholder="Enter Persons's Name" />
-        {% endfor %}
-        <input type='submit' value='Create Group'/>
+        <table>
+            {% for num in list %}
+            <tr>
+                <td><label>Participant {{num}}:</label></td>
+                <td><input type='text' name='person{{num}}' placeholder="Enter Persons's Name"/></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <input class='button' type='submit' value='Create Group'/>
     </form>
 </div>
 {% endif %}

@@ -3,49 +3,35 @@
     src: url('/static/styles/IrishGrover-Regular.ttf');
 }
 
-table {
-    margin-top: 30px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 90%;
-    table-layout: fixed;
-}
-td {
-    width: 33%;
-    text-align: center;
+a {
+    display: block;
     font-family: Irish Grover;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #929292;
     font-size: 30px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.logoutText {
-    color: #929292;
-    font-size: 32px;
+.deleteText {
+    margin: auto;
+    text-align:center;
+    font-family: Irish Grover;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .groupName {
-    text-align: left;
+    font-family: Irish Grover;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
     color: #DF5A5F;
 }
 
-.viewText {
-    color: #AFB97D;
-}
-
-.removeText {
-    color: black;
-}
-
-.nameText {
-    color: #929292;
-    font-size: 32px;
-    text-align: left;
-}
-
-.newGroupButton {
+.button {
     position: absolute;
     bottom: 40px;
     left: 0px;

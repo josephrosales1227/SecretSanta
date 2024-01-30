@@ -2,14 +2,15 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="{% static "/styles/delete-group-styles.css" %}">
 {% if request.user.is_authenticated %}
 <div>
     <a href='/'>Back</a>
     <form method='POST' action=''>
         {% csrf_token %}
-        <div>Are you sure you want to delete Group: {{name}}?</div>
-        <input type='submit' value='Delete Group'/>
+        <div class='deleteText'>Are you sure you want to delete Group:</div>
+        <div class='groupName'>{{name}}</div>
+        <input class='button' type='submit' value='Delete Group'/>
     </form>
 </div>
 {% endif %}

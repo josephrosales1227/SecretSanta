@@ -4,15 +4,24 @@
 <link rel="stylesheet" href="{% static "styles/view-group-styles.css" %}">
 <div>
     <a href='/'>Back</a>
-    <h1>
-        {{group.name}}
-    </h1>
-    <div>Budget: ${{group.budget}}</div>
-    {% for person in participants%}
-    <div>{{person.giver}}</div>
-    <div>Share</div>
-    {% endfor %}
-    <div>Instructions</div>
+    <div class='groupName'>{{group.name}}</div>
+    <div class='budget'>Budget: ${{group.budget}}</div>
+    <table>
+        {% for person in participants%}
+        <tr>
+            <td class='giverTable'><div class='giver'>{{person.giver}}</div></td>
+            <td class='shareTable'><div class='share'>Share</div></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class='instructionsTitle'>Instructions</div>
+    <div class='instructionsText'>
+        Click on the share text to copy a special message for the particular person you wish to share with. 
+        By clicking the text it will automatically copy the message to your clipboard. 
+        Make sure to share the message only with the person whom you clicked. 
+        Each participant will have their own special message to enable them to draw who they are buying for. 
+        The instructions for drawing names is included in the special message.
+    </div>
 </div>
 
 {% endblock %}

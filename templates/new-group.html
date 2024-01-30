@@ -9,15 +9,15 @@
     <form method='POST' action=''>
         {% csrf_token %}
         <label>Group Name:</label>
-        <input type='text' name='groupName' placeholder='Enter Group Name' />
+        <input class='field' type='text' name='groupName' placeholder='Enter Group Name' />
 
         <label>Number Of Participants:</label>
-        <input type="number" name="numParticipants" min="4" max="100" />
+        <input class='field' ttype="number" name="numParticipants" min="4" max="100" placeholder='#'/>
 
         <label>Budget:</label>
-        <input type="number" name="budget" min="1"/>
+        <input class='field' ttype="number" name="budget" min="1" placeholder='$'/>
 
-        <input type='submit' value='Next'/>
+        <input class='button' type='submit' value='Next'/>
     </form>
 </div>
 {% endif %}
