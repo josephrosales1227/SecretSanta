@@ -118,7 +118,7 @@ def addParticipants(request, groupName, numParticipants, budget):
         for num in ls:
             personName = request.POST.get('person' + str(num))
             if personName == '':
-                messages.error(request, 'Could not create account')
+                messages.error(request, 'Could not create group')
                 return redirect('/')
             giver.append(personName)
         group = Group.objects.create (

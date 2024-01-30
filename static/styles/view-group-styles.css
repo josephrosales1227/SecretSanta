@@ -49,6 +49,9 @@ td {
 .share {
     color: #7996FF;
 }
+.share:hover {
+    cursor: pointer;
+}
 
 .instructionsTitle {
     text-align: center;

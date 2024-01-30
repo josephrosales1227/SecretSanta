@@ -10,7 +10,7 @@
         {% for person in participants%}
         <tr>
             <td class='giverTable'><div class='giver'>{{person.giver}}</div></td>
-            <td class='shareTable'><div class='share'>Share</div></td>
+            <td class='shareTable'><button class='share' data-code="{{person.individualCode}}">Share</button></td>
         </tr>
         {% endfor %}
     </table>
@@ -23,5 +23,16 @@
         The instructions for drawing names is included in the special message.
     </div>
 </div>
+
+<script>
+    const host = '{{group.host}}'
+    const groupCode = '{{group.code}}'
+    const shareBtns = [...document.getElementsByClassName('share')]
+    shareBtns.forEach(btn => btn.addEventListener('click', ()=>{
+        const individualCode = btn.getAttribute('data-code')
+        message = "You've been invited to " + host + "'s Secret Santa gift exchange! To find out the person you are giving a gift to visit http://127.0.0.1:8000/draw-name/" + groupCode + " and type in your secret code: " + individualCode +"!"
+        navigator.clipboard.writeText(message)
+    }))
+</script>
 
 {% endblock %}

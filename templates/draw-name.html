@@ -8,6 +8,7 @@
 <div class='santaText'>Santa</div>
 <img class='hat' src="{% static 'images/santa-hat.png'%}"/>
 <form action='' method='POST'>
+    {% csrf_token %}
     <input type="text" name = "personCode" placeholder='Code'>
     <input type='submit' value='Draw Name'/>
 </form>
