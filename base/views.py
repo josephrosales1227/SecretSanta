@@ -20,9 +20,13 @@ def deleteGroup(request, code):
 def drawName(request, code):
     context = {}
     if request.method == 'POST':
-        individualCode=request.POST.get('personCode')
-        Relation.objects.get(individualCode=individualCode, groupCode=code)
-        return redirect('getPerson', groupCode=code, individualCode=individualCode)
+        individualCode = request.POST.get('personCode')
+        individualCode = individualCode.upper()
+        try:
+            Relation.objects.get(individualCode=individualCode, groupCode=code)
+            return redirect('getPerson', groupCode=code, individualCode=individualCode)
+        except Relation.DoesNotExist:
+            messages.error(request, 'Invalid Code')
     if Group.objects.filter(code=code).exists():
         print('here')
         group = Group.objects.get(code=code)

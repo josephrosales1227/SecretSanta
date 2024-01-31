@@ -4,13 +4,12 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static "styles/home-styles.css" %}">
-<div class='secretText'>Secret</div>
-<div class='santaText'>Santa</div>
-<img class='hat' src="{% static 'images/santa-hat.png'%}"/>
+<img src='/static/images/logo.PNG'>
 <form action='' method='POST'>
     {% csrf_token %}
-    <input type="text" name = "personCode" placeholder='Code'>
-    <input type='submit' value='Draw Name'/>
+    <div class='text'>Enter your secret code:</div>
+    <input type="text" name = "personCode" placeholder='Code' class='codeBox'>
+    <input type='submit' value='Draw Name' class='drawButton'/>
 </form>
 
 {% endblock %}
