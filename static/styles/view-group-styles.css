@@ -36,10 +36,6 @@ td {
     color: #AFB97D;
 }
 
-.giver {
-
-}
-
 .giverTable {
     text-align: right;
 }
@@ -47,7 +43,13 @@ td {
     text-align: left;
 }
 .share {
-    color: #7996FF;
+    color: white;
+    background-color: #7996FF;
+    font-family: Irish Grover;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-color: transparent;
+    border-radius: 6px;
 }
 .share:hover {
     cursor: pointer;

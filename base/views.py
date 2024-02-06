@@ -2,9 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
+from.forms import CustomUserCreationForm
 from .models import Group, Relation
 import random
 import string
@@ -28,7 +28,6 @@ def drawName(request, code):
         except Relation.DoesNotExist:
             messages.error(request, 'Invalid Code')
     if Group.objects.filter(code=code).exists():
-        print('here')
         group = Group.objects.get(code=code)
         context['group'] = group
     else:
@@ -47,16 +46,16 @@ def account(request):
     return render(request, 'account.html', context)
 
 def createAccount(request):
-    form = UserCreationForm()
+    form = CustomUserCreationForm
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
-            redirect('/')
+            return redirect('/')
         else:
             messages.error(request, 'Could not create account')
-    return render(request, 'create-account.html', {'form': form})
+    return render(request, 'create-account.html', {'form':form})
 
 @login_required(login_url='loginPage')
 def newGroup(request):

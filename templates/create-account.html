@@ -2,12 +2,16 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static "styles/create-account-styles.css" %}">
+<img src='/static/images/logo.PNG'>
 <div>
     <form method='POST' action=''>
         {% csrf_token %}
-        {{form.as_p}}
-        <input type='submit' value='Create Account' />
+        {% for field in form %}
+        <div class='labels'>{{field.label_tag}}</div>
+        {{field}}
+        {% endfor %}
+        <input class='button' type='submit' value='Create Account' />
     </form>
-    <a href="{% url 'loginPage' %}">Already have an account? Login</a>
+    <a class = 'login' href="{% url 'loginPage' %}">Already have an account? Login</a>
 </div>
 {% endblock %}
