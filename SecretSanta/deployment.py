@@ -20,7 +20,7 @@ MIDDLEWARE = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-cnx = mysql.connector.connect(user="bwtyzjatch", password="{your_password}", host="secretsanatwebapp-server.mysql.database.azure.com", port=3306, database="{your_database}", ssl_ca="{ca-cert filename}", ssl_disabled=False)
+cnx = mysql.connector.connect(user="bwtyzjatch", password="24N3G37135BHY6D0$", host="secretsanatwebapp-server.mysql.database.azure.com", port=3306, database="secretsanatwebapp-server", ssl_ca="{ca-cert filename}", ssl_disabled=False)
 
 
 DATABASES = {
