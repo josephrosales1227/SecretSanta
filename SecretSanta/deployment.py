@@ -20,16 +20,16 @@ MIDDLEWARE = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-connection_string = os.environ['AZURE_POSTGRESQL_CONNECTIONSTRING']
-parameters = {pair.split('='):pair.split('=')[1] for pair in connection_string.split(' ')}
+cnx = mysql.connector.connect(user="bwtyzjatch", password="{your_password}", host="secretsanatwebapp-server.mysql.database.azure.com", port=3306, database="{your_database}", ssl_ca="{ca-cert filename}", ssl_disabled=False)
 
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': parameters['dbname'],
-        'HOST': parameters['host'],
-        'USER': parameters['user'],
-        'PASSWORD': parameters['password'],
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': cnx['database'],
+        'HOST': cnx['host'],
+        'USER': cnx['user'],
+        'PASSWORD': cnx['password'],
+        'PORT': cnx['port'],
     }
 }
