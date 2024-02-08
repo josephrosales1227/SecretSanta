@@ -93,6 +93,7 @@ if IS_HEROKU_APP:
     # https://github.com/jazzband/dj-database-url
     DATABASES = {
         "default": dj_database_url.config(
+            default='postgres://%2Fvar%2Flib%2Fpostgresql/dbname',
             conn_max_age=600,
             conn_health_checks=True,
             ssl_require=True,
