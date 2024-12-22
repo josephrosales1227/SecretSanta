@@ -22,7 +22,7 @@ DEBUG = False
 # to list the expected hostnames explicitly to prevent HTTP Host header attacks. See:
 # https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-ALLOWED_HOSTS
 
-ALLOWED_HOSTS = ['secretsantawebapp-c4707cc18cc2.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
