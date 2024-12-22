@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url("/static/styles/IrishGrover-Regular.3dd8c2215323.ttf");
+}
+
+table {
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
+    table-layout: fixed;
+}
+td {
+    width: 33%;
+    text-align: center;
+    font-family: Irish Grover;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logoutText {
+    color: #929292;
+    font-size: 32px;
+}
+
+.groupName {
+    text-align: left;
+    color: #DF5A5F;
+}
+
+.viewText {
+    color: #AFB97D;
+}
+
+.removeText {
+    color: black;
+}
+
+.nameText {
+    color: #929292;
+    font-size: 32px;
+    text-align: left;
+}
+
+.newGroupButton {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 26px;
+    font-family: Irish Grover;
+    background: #DF5A5F;
+    border-radius: 9px;
+    border-color: transparent;
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}

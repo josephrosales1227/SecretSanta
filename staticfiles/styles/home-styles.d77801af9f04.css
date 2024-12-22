@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url("/static/styles/IrishGrover-Regular.3dd8c2215323.ttf");
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.text {
+    font-family: Irish Grover;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.codeBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-family: Irish Grover;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.drawButton {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 26px;
+    font-family: Irish Grover;
+    background: #DF5A5F;
+    border-radius: 9px;
+    border-color: transparent;
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}

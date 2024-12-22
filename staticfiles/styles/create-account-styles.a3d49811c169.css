@@ -1,0 +1,53 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+input {
+    display: block;
+    width: 60%;
+    font-family: Irish Grover;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 9px;
+    border: 1px #DCDCDC solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labels { 
+    text-align: center;
+    font-family: Irish Grover;
+    font-size: 24px;
+}
+
+.button {
+    display: block;
+    font-family: Irish Grover;
+    font-size: 30px;
+    background-color: #DF5A5F;
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+.login {
+    display: block;
+    text-align: center;
+    font-family: Irish Grover;
+    font-size: 18px;
+    color: #7996FF;
+}

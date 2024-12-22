@@ -148,7 +148,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-django_heroku.settings(locals())
+django_heroku.settings(locals(), staticfiles=False)
 
 STORAGES = {
     # Enable WhiteNoise's GZip and Brotli compression of static assets:
