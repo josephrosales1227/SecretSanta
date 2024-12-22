@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url('/static/styles/IrishGrover-Regular.ttf');
+}
+
+
+.topText {
+    color: black;
+    font-size: 44px;
+    font-family: Irish Grover;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 150px;
+}
+.receiverText {
+    color: #DF5A5F;
+    font-size: 96px;
+    font-family: Irish Grover;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.bottomText {
+    color: black;
+    font-size: 40px;
+    font-family: Irish Grover;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.budgetText {
+    color: #AFB97D;
+    font-size: 40px;
+    font-family: Irish Grover;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
