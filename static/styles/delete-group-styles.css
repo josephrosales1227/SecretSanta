@@ -10,21 +10,21 @@ a {
     margin-left: 25px;
     margin-top: 15px;
     color: #929292;
-    font-size: 30px;
+    font-size: clamp(20px, 4vw, 30px);
 }
 
 .deleteText {
     margin: auto;
     text-align:center;
     font-family: Irish Grover;
-    font-size: 30px;
+    font-size: clamp(20px, 2vw, 30px);
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .groupName {
     font-family: Irish Grover;
-    font-size: 40px;
+    font-size: clamp(25px, 2vw, 40px);
     text-decoration: underline;
     font-weight: bold;
     text-align: center;
@@ -39,7 +39,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-size: 26px;
+    font-size: clamp(18px, 3vw, 26px);
     font-family: Irish Grover;
     background: #DF5A5F;
     border-radius: 9px;

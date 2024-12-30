@@ -5,12 +5,12 @@ a {
     margin-left: 25px;
     margin-top: 15px;
     color: #929292;
-    font-size: 30px;
+    font-size: clamp(18px, 2vw, 30px);
 }
 
 label {
     font-family: Irish Grover;
-    font-size: 30px;
+    font-size: clamp(18px, 2vw, 30px);
     display: block;
     text-align: center;
 }
@@ -18,7 +18,7 @@ label {
 .field {
     color: black;
     font-family: Irish Grover;
-    font-size: 20px;
+    font-size: clamp(15px, 2vw, 20px);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -51,4 +51,8 @@ label {
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+}
+
+form {
+    overflow-y: auto;
 }

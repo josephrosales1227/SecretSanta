@@ -5,11 +5,16 @@ a {
     margin-left: 25px;
     margin-top: 15px;
     color: #929292;
-    font-size: 30px;
+    font-size: clamp(16px, 2vw, 32px);
 }
 
 div {
     font-family: Irish Grover;
+}
+
+.tableContainer {
+    height: clamp(150px, 16vw, 1300px);
+    overflow-y: auto;
 }
 
 table {
@@ -25,13 +30,13 @@ td {
     padding-right: 20px;
 }
 .groupName {
-    font-size: 30px;
+    font-size: clamp(20px, 2vw, 32px);
     text-align: center;
     color: #DF5A5F;
 }
 
 .budget {
-    font-size: 20px;
+    font-size: clamp(15px, 2vw, 20px);
     text-align: center;
     color: #AFB97D;
 }
@@ -57,7 +62,7 @@ td {
 
 .instructionsTitle {
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(20px, 2vw, 25px);
 
 }
 
@@ -65,4 +70,5 @@ td {
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 5px;
+    font-size: clamp(20px, 2vw, 25px);
 }
