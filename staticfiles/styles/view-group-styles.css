@@ -62,7 +62,7 @@ td {
 
 .instructionsTitle {
     text-align: center;
-    font-size: clamp(20px, 2vw, 25px);
+    font-size: clamp(17px, 3vw, 25px);
 
 }
 
@@ -70,5 +70,5 @@ td {
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 5px;
-    font-size: clamp(20px, 2vw, 25px);
+    font-size: clamp(15px, 3vw, 25px);
 }
