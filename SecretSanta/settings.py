@@ -3,8 +3,7 @@ import secrets
 import os
 import django_heroku
 import dj_database_url
-from dotenv import load_dotenv, find_dotenv
-
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -12,7 +11,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-load_dotenv(find_dotenv())
 SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = False
